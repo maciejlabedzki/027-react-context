@@ -98,6 +98,22 @@ const MyContext = React.createContext();
     )}
   </MyContext.Consumer>
   ```
-state
+ 
+Nested state update. I dont like this. Only for learn purpose for the test.
 
-nested state update
+```js
+      const cars = Object.assign({}, this.state.store.cars);
+      cars[selectedID].price = cars[selectedID].price + 1;
+      this.setState(
+        prevState => ({
+          ...prevState,
+          store: {
+            ...prevState.store,
+            cars
+          }
+        }),
+        () => {
+          console.log(this.state);
+        }
+      );
+```
