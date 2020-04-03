@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "react": "16.12.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "16.12.0",
@@ -17,11 +18,13 @@
   "devDependencies": {
     "typescript": "3.3.3"
   },
+  "homepage": "https://maciejlabedzki.github.io/027-react-context/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",

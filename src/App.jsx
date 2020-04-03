@@ -8,6 +8,8 @@ import MyProvider from "./MyProvider";
 import ProductList from "./ProductList";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
+
+// eslint-disable-next-line
 import Button from "react-bootstrap/Button";
 
 // eslint-disable-next-line

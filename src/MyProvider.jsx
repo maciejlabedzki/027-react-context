@@ -26,67 +26,47 @@ class MyProvider extends Component {
           incrementPrice: selectedID => {
             const cars = Object.assign({}, this.state.store.cars);
             cars[selectedID].price = cars[selectedID].price + 1;
-            this.setState(
-              prevState => ({
-                ...prevState,
-                store: {
-                  ...prevState.store,
-                  cars
-                }
-              }),
-              () => {
-                console.log(this.state);
+            this.setState(prevState => ({
+              ...prevState,
+              store: {
+                ...prevState.store,
+                cars
               }
-            );
+            }));
           },
           decrementPrice: selectedID => {
             const cars = Object.assign({}, this.state.store.cars);
             cars[selectedID].price = cars[selectedID].price - 1;
-            this.setState(
-              prevState => ({
-                ...prevState,
-                store: {
-                  ...prevState.store,
-                  cars
-                }
-              }),
-              () => {
-                console.log(this.state);
+            this.setState(prevState => ({
+              ...prevState,
+              store: {
+                ...prevState.store,
+                cars
               }
-            );
+            }));
           },
           incrementPriceToy: selectedID => {
             const toys = Object.assign({}, this.state.store.toys);
             toys[selectedID].price = toys[selectedID].price + 1;
-            this.setState(
-              prevState => ({
-                ...prevState,
-                store: {
-                  ...prevState.store,
-                  toys
-                }
-              }),
-              () => {
-                console.log(this.state);
+            this.setState(prevState => ({
+              ...prevState,
+              store: {
+                ...prevState.store,
+                toys
               }
-            );
+            }));
           },
           decrementPriceToy: selectedID => {
             console.log("aaa");
             const toys = Object.assign({}, this.state.store.toys);
             toys[selectedID].price = toys[selectedID].price - 1;
-            this.setState(
-              prevState => ({
-                ...prevState,
-                store: {
-                  ...prevState.store,
-                  toys
-                }
-              }),
-              () => {
-                console.log(this.state);
+            this.setState(prevState => ({
+              ...prevState,
+              store: {
+                ...prevState.store,
+                toys
               }
-            );
+            }));
           }
         }}
       >
