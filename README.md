@@ -2,7 +2,7 @@
 
 ```js
 const MyContext = React.createContext();
-```js
+```
 
 ```js
       <MyContext.Provider
