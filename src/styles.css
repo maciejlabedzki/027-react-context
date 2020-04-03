@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.jumbotron {
+  background-image: url(https://i.imgur.com/DF8eRoLg.jpg);
+  background-position: center top -240px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  color: white;
+  background: #00000087;
+}
