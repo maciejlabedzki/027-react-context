@@ -21,13 +21,13 @@ class App extends React.Component {
           <header className="App-header">
             <Jumbotron>
               <h1>Welcome to my web store</h1>
-              <p>
+              {/* <p>
                 This is a simple hero unit, a simple jumbotron-style component
                 for calling extra attention to featured content or information.
               </p>
               <p>
                 <Button variant="primary">Learn more</Button>
-              </p>
+              </p> */}
             </Jumbotron>
           </header>
           {/* <Carousel /> */}
